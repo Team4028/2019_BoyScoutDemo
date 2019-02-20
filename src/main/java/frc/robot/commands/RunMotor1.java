@@ -33,7 +33,7 @@ public class RunMotor1 extends Command {
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
-    _motor1.run(_thumbstick.getY() * 0.15 );
+    _motor1.run(_thumbstick.getY());
   }
 
   // Make this return true when this Command no longer needs to run execute()

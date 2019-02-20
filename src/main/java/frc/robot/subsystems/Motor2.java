@@ -37,9 +37,10 @@ public class Motor2 extends Subsystem {
         _motor2.configFactoryDefault();
     }
 
+    // run the motor but cap the speed
     public void run(double motorCmd)
     {
-        _motor2.set(ControlMode.PercentOutput, motorCmd);
+        _motor2.set(ControlMode.PercentOutput, (motorCmd * 0.25));
     }
 
     @Override
